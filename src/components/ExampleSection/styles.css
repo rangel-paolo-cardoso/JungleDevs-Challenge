@@ -1,0 +1,30 @@
+.example-section {
+  align-items: center;
+  border-bottom: 1px solid #dfdfdf;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+}
+
+.example-section img {
+  height: 56px;
+  margin-bottom: 10px;
+  width: 56px;
+}
+
+.example-section p:first-of-type {
+  color: #5E20A4;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: underline;
+  width: 200px;
+}
+
+.example-section p:last-of-type {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
