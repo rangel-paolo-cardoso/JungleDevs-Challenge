@@ -1,37 +1,47 @@
 .description-section {
-  align-items: center;
+  /* align-items: center; */
   display: flex;
-  flex-direction: column;
-  padding: 40px 15px 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 120px 120px 10px;
 }
 
 .description-section img {
-  width: 304px;
-  height: 204px;
+  height: 392px;
+  width: 584px;
 }
 
-.description-section h3 {
-  font-size: 22px;
+.description-section div {
+  width: 40%;
+}
+
+.description-section div h3 {
+  font-size: 28px;
   font-weight: 500;
   line-height: 32px;
-  margin: 10px 0;
-  width: 200px;
+  margin-bottom: 30px;
+  width: 60%;
 }
 
-.description-section h3,
-.description-section p {
+/* .description-section div p {
+  text-align: left;
+} */
+
+.description-section div h3,
+.description-section div p {
   color: #3D3D3D;
-  text-align: center;
+  text-align: left;
+  margin-bottom: 40px;
 }
 
-.description-section p span,
-.description-section a {
+.description-section div p span,
+.description-section div a {
   color: #5E20A4;
   font-size: 16px;
   text-align: center;
 }
 
-.description-section a {
+.description-section div a {
   margin-top: 25px;
-  margin-bottom: 55px;
+  /* margin-bottom: 55px; */
 }
