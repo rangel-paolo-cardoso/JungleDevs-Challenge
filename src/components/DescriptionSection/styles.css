@@ -2,7 +2,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 20px 15px 10px;
+  padding: 40px 15px 10px;
 }
 
 .description-section img {
@@ -12,15 +12,16 @@
 
 .description-section h3 {
   font-size: 22px;
+  font-weight: 500;
   line-height: 32px;
   margin: 10px 0;
-  text-align: center;
   width: 200px;
 }
 
 .description-section h3,
 .description-section p {
   color: #3D3D3D;
+  text-align: center;
 }
 
 .description-section p span,
@@ -33,9 +34,4 @@
 .description-section a {
   margin-top: 25px;
   margin-bottom: 55px;
-}
-
-.gray-bar {
-  border-bottom: 2px solid #dfdfdf;
-  width: 328px;
 }

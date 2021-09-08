@@ -1,5 +1,6 @@
 .example-section {
   align-items: center;
+  background-color: white;
   border-bottom: 1px solid #dfdfdf;
   color: black;
   display: flex;

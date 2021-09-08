@@ -1,4 +1,5 @@
 import React from 'react';
+import GrayBar from '../GrayBar';
 
 import imageSection1 from '../../assets/description-section/ImageSection1.png';
 
@@ -20,7 +21,7 @@ const DescriptionSection = () => {
         childcare that work for you and your community.
       </p>
       <a href="/#">Ready to get started?</a>
-      <div className="gray-bar"/>
+      <GrayBar />
     </section>
   );
 };
