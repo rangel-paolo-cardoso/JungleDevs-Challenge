@@ -4,23 +4,24 @@
   border-bottom: 1px solid #dfdfdf;
   color: black;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   padding: 30px 20px;
 }
 
 .example-section img {
+  border: 4px solid white;
   height: 56px;
+  margin-right: 20px;
   margin-bottom: 10px;
   width: 56px;
 }
 
 .example-section p:first-of-type {
   color: #5E20A4;
+  margin-right: 5px;
   font-size: 16px;
   line-height: 24px;
-  text-align: center;
   text-decoration: underline;
-  width: 200px;
 }
 
 .example-section p:last-of-type {

@@ -1,4 +1,4 @@
-# Project instruction
+# Project instructions
 
 ## Run the project on your development environment
 <p>
