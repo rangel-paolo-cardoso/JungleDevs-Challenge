@@ -3,3 +3,11 @@
   margin: 100px auto 60px;
   width: 784px;
 }
+
+@media screen and (max-width: 540px) {
+
+  .gray-bar {
+    margin: 60px auto 60px;
+    width: 328px;
+  }
+}

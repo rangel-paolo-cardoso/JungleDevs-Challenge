@@ -10,6 +10,7 @@ const Footer = () => (
     <ScheduleContainer />
     <SocialMediaContainer />
     <div className="copyright-container">
+      <div />
       <p>Copyright © 2017 Hapu PTY Limited All rights reserved</p>
     </div>
   </footer>

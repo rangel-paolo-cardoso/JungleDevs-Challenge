@@ -14,6 +14,7 @@ const MainSection = () => (
     <DescriptionSection />
     <GrayBar />
     <ContactSection />
+    <GrayBar />
     <PaymentInfoSection />
     <GrayBar />
     <LongTermSection />

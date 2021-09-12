@@ -1,33 +1,31 @@
 import React, { useState } from 'react';
-import Swal from 'sweetalert2';
 
-import GrayBar from '../GrayBar';
 import api from '../../services/api';
+
+import Input from './components/Input';
+import LoadingEffect from './components/LoadingEffect';
 
 import './styles.css';
 
 const ContactSection = () => {
-  const [userName, setUserName] = useState('');
-  const [userEmail, setUserEmail] = useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [responseMessage, setResponseMessage] = useState('');
 
   const handleSubmitNewsLetter = async (event) => {
+    setLoading(true);
     event.preventDefault();
     try {
       const response = await api.post('/', {
-        "name": userName,
-        "email": userEmail,
+        name,
+        email,
       });
-      Swal.fire({
-        icon: 'success',
-        title: 'Newsletter registration successful!',
-        text: response?.data?.detail,
-      });
+      setResponseMessage(response?.data?.detail);
     } catch (error) {
-      Swal.fire({
-        icon: 'error',
-        title: 'Something went wrong!',
-        text: error?.message,
-      });
+      setResponseMessage(`Something went wrong! ${error?.message}`);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -39,26 +37,32 @@ const ContactSection = () => {
         your area!
       </p>
       <form onSubmit={handleSubmitNewsLetter}>
-        <input
+        <Input
           id="userName"
           name="userName"
           type="text"
           placeholder="Your name"
           required
-          onChange={(event) => setUserName(event.target.value)}
+          onChange={setName}
         />
-        <input
+        <Input
           id="userEmail"
           name="userEmail"
           type="text"
           placeholder="Your email"
           required
-          pattern="^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$"
-          onChange={(event) => setUserEmail(event.target.value.toLowerCase())}
+          onChange={setEmail}
         />
         <button type="submit">Send</button>
+        <p className="status-message">
+          {loading ? <LoadingEffect /> : null}
+          {responseMessage === 'Ok.' ? (
+            <strong className="success">{responseMessage}</strong>
+          ) : (
+            <strong className="fail">{responseMessage}</strong>
+          )}
+        </p>
       </form>
-      <GrayBar />
     </section>
   );
 };

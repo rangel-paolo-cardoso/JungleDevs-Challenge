@@ -55,3 +55,30 @@
   font-size: 14px;
   line-height: 20px;
 }
+
+@media screen and (max-width: 540px) {
+
+  .navgation-bar {
+    margin: 0 5px;
+  }
+
+  .nav-options ul,
+  .subscribe-options a {
+    display: none;
+  }
+
+  .nav-options,
+  .subscribe-options {
+    align-items: center;
+    justify-content: space-between;
+    width: inherit;
+  }
+
+  .subscribe-options button {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    width: 234px;
+    height: 44px;
+  }
+}

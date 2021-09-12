@@ -26,8 +26,8 @@
   margin-top: 65px;
 }
 
-.contact-section form input,
-.contact-section form button {
+.contact-section input,
+.contact-section button {
   border-radius: 4px;
   font-size: 14px;
   height: 48px;
@@ -35,14 +35,53 @@
   width: 232px;
 }
 
-.contact-section form input {
+.contact-section input {
+  border: 1px solid #dfdfdf;
   color: #3d3d3d;
   line-height: 20px;
   text-indent: 20px;
 }
 
-.contact-section form button {
+.contact-section button {
   background-color: #00a870;
   font-weight: 500;
   width: 96px;
+}
+
+.status-message {
+  font-weight: 500;
+}
+
+.success {
+  color: #00dd22;
+}
+
+.fail {
+  color: #dd2222;
+}
+
+@media screen and (max-width: 540px) {
+
+  .contact-section p {
+    font-size: 16px;
+  }
+
+  .contact-section form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 35px;
+  }
+
+  .contact-section input,
+  .contact-section button {
+    margin-bottom: 12px;
+    margin-right: 0;
+    width: 328px;
+  }
+
+  .contact-section input:nth-of-type(2) {
+    margin-bottom: 15px;
+  }
 }

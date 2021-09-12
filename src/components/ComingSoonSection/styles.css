@@ -8,7 +8,6 @@
 
 .coming-soon-section img {
   height: 96px;
-  /* margin-bottom: 35px; */
   width: 216px;
 }
 
@@ -29,4 +28,27 @@
   line-height: 28px;
   padding: 0 160px;
   text-align: center;
+}
+
+@media screen and (max-width: 540px) {
+
+  .coming-soon-section {
+    padding: 10px 20px 50px;
+  }
+
+  .coming-soon-section h2,
+  .coming-soon-section p {
+    text-align: center;
+  }
+
+  .coming-soon-section h2 {
+    font-size: 22px;
+    margin: 25px 0;
+  }
+
+  .coming-soon-section p {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0;
+  }
 }

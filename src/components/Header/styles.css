@@ -47,4 +47,58 @@
 
 .header-action a {
   font-size: 16px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 540px) {
+
+  .header-section {
+    background: url('../../assets/header-icons/mobile-header-background.png'),
+    linear-gradient(90deg, #3f0063, #bc00eb) no-repeat;
+    background-size: cover;
+    height: 540px;
+    width: 100%;
+  }
+
+  .page-presentation {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .page-presentation > img {
+    display: none;
+  }
+
+  .page-presentation div {
+    width: 100%;
+  }
+
+  .page-presentation div h1,
+  .page-presentation div p {
+    text-align: center;
+  }
+
+  .page-presentation div h1 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+
+  .page-presentation div p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .page-presentation div .header-action {
+    width: 100%;
+  }
+
+  .page-presentation div .header-action {
+    justify-content: space-around;
+  }
+  
+  .header-action a {
+    line-height: 24px;
+  }
 }

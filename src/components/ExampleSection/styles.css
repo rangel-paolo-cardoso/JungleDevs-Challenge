@@ -16,6 +16,10 @@
   width: 56px;
 }
 
+.example-section p {
+  font-weight: 500;
+}
+
 .example-section p:first-of-type {
   color: #5E20A4;
   margin-right: 5px;
@@ -29,4 +33,21 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
+}
+
+@media screen and (max-width: 540px) {
+
+  .example-section {
+    flex-direction: column;
+    padding: 25px 25px;
+  }
+
+  .example-section p {
+    margin: 0;
+    text-align: center;
+  }
+
+  .example-section p:first-of-type {
+    margin-bottom: 10px;
+  }
 }

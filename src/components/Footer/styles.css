@@ -6,3 +6,33 @@
   flex-direction: column;
   padding: 80px 0 30px 0;
 }
+
+.copyright-container > div {
+  display: none;
+}
+
+@media screen and (max-width: 540px) {
+
+  .page-footer {
+    padding: 40px 10px 25px 10px;
+  }
+
+  .copyright-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .copyright-container > div {
+    border-bottom: 1px solid #dfdfdf;
+    display: block;
+    width: 328px;
+  }
+  
+  .copyright-container > p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 25px;
+  }
+}

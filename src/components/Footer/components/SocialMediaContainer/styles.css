@@ -8,9 +8,36 @@
 }
 
 .share-links-container a {
+  display: inline-block;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
   margin: 0 20px;
   text-decoration: none;
+}
+
+@media screen and (max-width: 540px) {
+
+  .social-media-container {
+    display: flex;
+    flex-direction: column;
+    margin: 55px 0 40px;
+  }
+
+  .social-media-container > a {
+    margin-bottom: 20px;
+  }
+
+  .share-links-container {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .share-links-container a {
+    margin: 5px 25px;
+  }
+
+  .media-container a {
+    margin: 0 7px;
+  }
 }
