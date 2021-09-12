@@ -1,0 +1,32 @@
+.coming-soon-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 80px;
+}
+
+.coming-soon-section img {
+  height: 96px;
+  /* margin-bottom: 35px; */
+  width: 216px;
+}
+
+.coming-soon-section h2,
+.coming-soon-section p {
+  color: #3d3d3d;
+}
+
+.coming-soon-section h2 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px;
+  margin: 35px 0;
+}
+
+.coming-soon-section p {
+  font-size: 16px;
+  line-height: 28px;
+  padding: 0 160px;
+  text-align: center;
+}

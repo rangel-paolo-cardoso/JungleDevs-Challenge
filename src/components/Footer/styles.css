@@ -1,0 +1,90 @@
+/* Footer general styles */
+.page-footer {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0 30px 0;
+}
+
+/* First container */
+.page-footer .schedule-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer h2,
+.page-footer p,
+.page-footer span,
+.share-links-container a {
+  color: #3d3d3d;
+  text-align: center;
+}
+
+.page-footer .schedule-container h2 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.page-footer .schedule-container p {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 35px;
+}
+
+.schedule-nanny-share {
+  align-items: center;
+  background-color: #5e20a4;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  height: 68px;
+  justify-content: space-around;
+  margin-bottom: 25px;
+  padding: 0 22px;
+  width: 304px;
+}
+
+.schedule-nanny-share div {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-nanny-share div span {
+  color: white;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.schedule-nanny-share div span:last-of-type {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.page-footer .schedule-container a {
+  color: #5e20a4;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+/* Second container */
+.social-media-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 70px 0;
+  width: 100%;
+}
+
+.share-links-container a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0 20px;
+  text-decoration: none;
+}

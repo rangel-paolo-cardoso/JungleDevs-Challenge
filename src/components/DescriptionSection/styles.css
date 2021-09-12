@@ -1,5 +1,4 @@
 .description-section {
-  /* align-items: center; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -15,7 +14,7 @@
   width: 40%;
 }
 
-.description-section div h3 {
+.description-section div h2 {
   font-size: 28px;
   font-weight: 500;
   line-height: 32px;
@@ -23,11 +22,7 @@
   width: 60%;
 }
 
-/* .description-section div p {
-  text-align: left;
-} */
-
-.description-section div h3,
+.description-section div h2,
 .description-section div p {
   color: #3D3D3D;
   text-align: left;
@@ -43,5 +38,10 @@
 
 .description-section div a {
   margin-top: 25px;
-  /* margin-bottom: 55px; */
+  font-weight: 500;
+}
+
+.description-section img {
+  width: 584px;
+  height: 392px;
 }

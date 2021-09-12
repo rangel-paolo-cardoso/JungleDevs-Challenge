@@ -1,0 +1,44 @@
+.payment-info-section {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 120px 0;
+}
+
+.payment-info-section img,
+.payment-info-section div {
+  height: 336px;
+}
+
+.payment-info-section img {
+  width: 456px;
+}
+
+.payment-info-section div {
+  padding: 0 55px;
+}
+
+.payment-info-section div h2,
+.payment-info-section div p {
+  color: #3d3d3d;
+}
+
+.payment-info-section div h2 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+.payment-info-section div p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+.payment-info-section div a {
+  color: #5e20a4;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
