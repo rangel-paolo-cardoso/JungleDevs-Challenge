@@ -5,7 +5,6 @@ import ContactSection from '../ContactSection';
 import PaymentInfoSection from '../PaymentInfoSection';
 import LongTermSection from '../LongTermSection';
 import ComingSoonSection from '../ComingSoonSection';
-import Footer from '../Footer';
 import GrayBar from '../GrayBar';
 
 import './styles.css';
@@ -20,7 +19,6 @@ const MainSection = () => (
     <LongTermSection />
     <GrayBar />
     <ComingSoonSection />
-    <Footer />
   </main>
 );
 

@@ -1,6 +1,8 @@
 import React from 'react';
 
-import calendarIcon from '../../../assets/footer-icons/Icon.svg';
+import calendarIcon from '../../../../assets/footer-icons/Icon.svg';
+
+import './styles.css';
 
 const ScheduleContainer = () => (
   <div className="schedule-container">

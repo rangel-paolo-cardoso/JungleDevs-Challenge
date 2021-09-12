@@ -1,0 +1,16 @@
+/* Second container */
+.social-media-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 70px 0;
+  width: 100%;
+}
+
+.share-links-container a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0 20px;
+  text-decoration: none;
+}
